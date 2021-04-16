@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="head"><h id="textcont">BOOK LIBRARY</h></div>
+<form id="form">
+    <br>
+    <label style="margin-left: 25px; margin-top: 10px; " ><b>Title:</b></label>
+    <br>
+    <input type="text" name="title" id="title" placeholder="Enter Title" style="margin-left: 25px; margin-top: 5px; " required>
+    <br>
+    <label style="margin-left: 25px; margin-top: 10px; "><b>Author:</b></label>
+    <br>
+    <input type="text" name="author" id="author" placeholder="Enter Author name" style="margin-left: 25px; margin-top: 5px; "  required>
+    <br>
+    <label style="margin-left: 25px; margin-top: 10px; " ><b>No. of Pages:</b></label>
+    <br>
+    <input type="number" min="10" name="No.ofPages" id="pages" placeholder="Enter no. of pages" style="margin-left: 25px; margin-top: 5px; "  required>
+    <br>
+    <label style="margin-left: 25px;"  ><b>Status:</b></label>
+    <input type="checkbox" name="status" id="status" value="read">
+    <label for="status">Completed</label>
+    <input type="hidden" name="status" id="status" value="not read">
+    <br>
+    <button style="margin-left: 75px; margin-top: 10px; " type="submit" style="margin-left: 30%; margin-bottom: 5px; " onclick="addBookToLibrary()" class="subBtn">Submit</button>
+
+</form>
+<div id="container" class="row">
+    <div class="column">
+    <button id="addBtn" class="card">Add Book</button>
+    </div>
+</div>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</body>
+</html>

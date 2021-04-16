@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f3eded;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #addBtn {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+#addBtn {
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 5%; 
+  margin-bottom: 20%;
+  border: 1px rgb(70, 68, 66);
+  border-radius: 25px;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(233, 204, 210);
+  box-shadow: 0px 6px 5px 0px rgb(187, 179, 179);
+  text-align: center;
+  align-self: center;
+}
+
+#addBtn:hover {
+  background-color: rgb(148, 196, 148);
+  font-weight: bolder;
+}
+
+.statBtn {
+  margin-right: 5%;
+  background-color: darkseagreen;
+  width: auto;
+  height: 25px;
+  border: 1px snow ;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px 0px rgb(206, 196, 194);
+}
+
+.remBtn {
+  background-color: tomato;
+  width: auto;
+  height: 25px;
+  border: 1px ;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px 0px rgb(206, 196, 194);
+}
+
+#form {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 250px; /* Full width (cover the whole page) */
+  height: 250px; /* Full height (cover the whole page) */
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 15px;
+  border: 3px solid rgb(146, 196, 158);
+  background-color: rgb(101, 168, 99); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  color: whitesmoke;
+}
+
+#head {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(233, 190, 141);
+  box-shadow: 0px 5px 5px 0 rgb(206, 196, 194);
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+div#head h#textcont {
+  color: whitesmoke;
+  font-size: 50px;
+  padding-top: 15%;
+  font-weight: bold;
+  text-shadow: 0 5px 5px thistle;
+  cursor: default;
+}
+
+.subBtn{
+  background-color: rgb(221, 185, 23);
+  width: auto;
+  height: 25px;
+  border: 1px ;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-size: small;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px 5px rgb(87, 133, 89);
+}
