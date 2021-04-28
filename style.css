@@ -4,6 +4,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Float four columns side by side */
@@ -29,6 +31,7 @@ body {
   padding: 16px;
   text-align: center;
   background-color: #f3eded;
+  margin-left: 5px;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -89,10 +92,7 @@ body {
   display: none; /* Hidden by default */
   width: 250px; /* Full width (cover the whole page) */
   height: 300px; /* Full height (cover the whole page) */
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
+  margin: 5px;
   border-radius: 15px;
   border: 3px solid rgb(146, 196, 158);
   background-color: rgb(101, 168, 99); /* Black background with opacity */
