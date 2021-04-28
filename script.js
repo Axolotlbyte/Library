@@ -78,21 +78,29 @@ Book.prototype.createCard = function(){
 }
 
 function addBookToLibrary() {
+    const titleTag = document.getElementById('title')
+    const authorTag = document.getElementById('author')
+    const pagesTag = document.getElementById('pages')
+    const statusTag = document.querySelector('#status')
 
-    let title = document.getElementById('title').value;
-    let author = document.getElementById('author').value;
-    let pages = parseInt(document.getElementById('pages').value);
-    let status = document.querySelector('#status').value;
+    if(title.validity.valid && 
+        author.validity.valid &&
+        pages.validity.valid ){
+    
+    let title = titleTag.value;
+    let author = authorTag.value;
+    let pages = parseInt(pagesTag.value);
+    let status = statusTag.value;
 
     if(document.querySelector('#status').checked == false){status = "not read"}
-    if(pages !== NaN){
+
     library.push({title: title, author: author, pages: pages, status: status});
-    }
 
     new Book(title,author,pages,status).createCard()
     console.log(library);
     form.style.display = 'none';
     form.reset();
+    }
     
 }
 
